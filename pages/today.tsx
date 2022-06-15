@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Container from "../components/Container";
 import PageTitle from "../components/PageTitle";
 import TodoItemList from "../components/TodoItemList";
+import { motion } from 'framer-motion'
 
 const Items = [
   { id: 1, title: "Learn Next.jsaowiejfoaiwjefoaijwefo", description: 'leffafrafarn about next.js', completed: false },
@@ -24,7 +25,7 @@ const Items = [
 const Today: NextPage = () => {
   return (
     <Container>
-      <PageTitle title={'오늘 할 일'} subtitle={moment(Date.now()).format('MM월 DD일 dddd')} />
+      <PageTitle title={'오늘 할 일'} subtitle={moment(Date.now()).format('MM월 DD일 dddd')} add />
       <TodoItemList items={Items} />
     </Container>
   )
