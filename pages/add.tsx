@@ -6,7 +6,7 @@ const Add: NextPage = () => {
   return (
     <Container>
       <PageTitle title='할일 추가하기' />
-      <div className='mt-1 gap-y-3'>
+      <form className='mt-1 gap-y-3'>
         <input 
           placeholder='제목을 입력하세요'
           className='w-full mt-5 text-2xl bg-primary '
@@ -59,7 +59,7 @@ const Add: NextPage = () => {
         <button className='w-full p-2 mt-5 font-bold text-white bg-purple-400 rounded-md'>
           추가
         </button>
-      </div>
+      </form>
     </Container>
   )
 }
